@@ -1,0 +1,739 @@
+<!-- ===== ETHICAL HACKING SYLLABUS - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00ff88;
+        border-radius: 50px;
+        color: #00ff88;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #00ff88;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h1 {
+        color: #ffffff !important;
+        font-size: 36px;
+        font-weight: 900;
+        margin: 30px 0 18px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 26px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        border-left: 5px solid #00ff88;
+        padding-left: 18px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #00d9ff !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+    }
+    
+    .cyber-post-wrapper h4 {
+        color: #ffcc00 !important;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h1 { font-size: 28px; }
+        .cyber-post-wrapper h2 { font-size: 22px; padding-left: 14px; }
+        .cyber-post-wrapper h3 { font-size: 18px; }
+        .cyber-post-wrapper h4 { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h1 { font-size: 22px; }
+        .cyber-post-wrapper h2 { font-size: 19px; padding-left: 12px; margin-top: 30px; }
+        .cyber-post-wrapper h3 { font-size: 16px; }
+        .cyber-post-wrapper h4 { font-size: 14px; }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.9;
+        margin: 14px 0 18px;
+    }
+    .cyber-post-wrapper p strong { color: #00ff88; }
+    @media (max-width: 768px) { .cyber-post-wrapper p { font-size: 16px; line-height: 1.8; } }
+    @media (max-width: 480px) { .cyber-post-wrapper p { font-size: 15px; line-height: 1.7; margin: 12px 0 14px; } }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul, .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 16px;
+        line-height: 2.2;
+        padding-left: 0;
+        margin: 12px 0 18px;
+        list-style: none;
+    }
+    .cyber-post-wrapper ul li, .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 3px;
+        padding-left: 26px;
+        position: relative;
+    }
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .cyber-post-wrapper ol {
+        counter-reset: item;
+    }
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 32px;
+    }
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul, .cyber-post-wrapper ol { font-size: 15px; line-height: 2; }
+        .cyber-post-wrapper ul li { padding-left: 22px; }
+        .cyber-post-wrapper ol li { padding-left: 28px; }
+    }
+    
+    /* ===== MODULE CARD ===== */
+    .module-card {
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        border-radius: 14px;
+        padding: 20px 24px;
+        margin: 16px 0 22px;
+        transition: 0.3s;
+    }
+    .module-card:hover {
+        border-color: rgba(0, 255, 136, 0.12);
+        transform: translateY(-2px);
+    }
+    .module-card .module-title {
+        color: #00ff88;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+    .module-card .module-title a {
+        color: #00ff88;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .module-card .module-title a:hover {
+        color: #00d9ff;
+        text-decoration: underline;
+    }
+    .module-card ul {
+        margin: 6px 0 0;
+    }
+    .module-card ul li {
+        font-size: 15px;
+        padding-left: 24px;
+    }
+    .module-card ul li::before {
+        font-size: 14px;
+    }
+    @media (max-width: 480px) {
+        .module-card { padding: 16px; }
+        .module-card .module-title { font-size: 17px; }
+        .module-card ul li { font-size: 14px; }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 22px 28px;
+        margin: 20px 0 30px;
+        justify-content: center;
+    }
+    .featured-box .featured-image img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #00ff88;
+        transition: 0.3s;
+    }
+    .featured-box .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.15);
+    }
+    .featured-box .featured-cta { flex: 1; text-align: center; }
+    .featured-box .featured-cta p { color: #b0b8c8 !important; margin: 5px 0 10px !important; font-size: 15px; }
+    .featured-box .featured-cta .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #00ff88, #00cc77);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .featured-box .featured-cta .btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+    }
+    .featured-box .price-tag {
+        display: inline-block;
+        padding: 3px 16px;
+        border-radius: 50px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+        .featured-box { flex-direction: column; text-align: center; padding: 18px; }
+        .featured-box .featured-image img { max-width: 140px; }
+        .featured-box .featured-cta .btn { width: 100%; }
+    }
+    
+    /* ===== TOOLS TAGS ===== */
+    .tools-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 12px 0 18px;
+    }
+    .tools-tags .tag {
+        padding: 4px 16px;
+        border-radius: 50px;
+        background: rgba(0, 255, 136, 0.06);
+        border: 1px solid rgba(0, 255, 136, 0.1);
+        color: #b0b8c8;
+        font-size: 12px;
+    }
+    .tools-tags .tag:hover {
+        border-color: #00ff88;
+        color: #00ff88;
+    }
+    
+    /* ===== ASSESSMENT GRID ===== */
+    .assessment-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 20px;
+        margin: 12px 0 18px;
+    }
+    .assessment-grid .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        background: rgba(0, 255, 136, 0.02);
+        border-radius: 8px;
+        border: 1px solid rgba(0, 255, 136, 0.04);
+    }
+    .assessment-grid .item .label { color: #b0b8c8; font-size: 14px; }
+    .assessment-grid .item .percent { color: #00ff88; font-weight: 700; font-size: 14px; }
+    @media (max-width: 600px) {
+        .assessment-grid { grid-template-columns: 1fr; }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #00ff88;
+        color: #00ff88 !important;
+        background: rgba(0, 255, 136, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #00ff88; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #00d9ff; text-decoration: underline; }
+    .text-center { text-align: center; }
+    
+    /* ===== COURSE INFO ===== */
+    .course-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 40px;
+        justify-content: center;
+        padding: 15px 20px;
+        background: rgba(0, 255, 136, 0.02);
+        border-radius: 12px;
+        border: 1px solid rgba(0, 255, 136, 0.05);
+        margin: 15px 0 25px;
+    }
+    .course-info .info-item { text-align: center; }
+    .course-info .info-item .label { color: #6a7290; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+    .course-info .info-item .value { color: #00ff88; font-size: 18px; font-weight: 700; }
+    @media (max-width: 600px) {
+        .course-info { gap: 15px; padding: 12px 16px; }
+        .course-info .info-item .value { font-size: 15px; }
+    }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">📚 Course Syllabus</div>
+            <h1 class="post-title-cyber">Ethical Hacking <strong>Syllabus</strong></h1>
+            <p class="post-description">
+                Complete 12-week course outline for Ethical Hacking &amp; Penetration Testing — from beginner to advanced.
+            </p>
+        </div>
+
+        <!-- ===== COURSE INFO ===== -->
+        <div class="course-info">
+            <div class="info-item">
+                <div class="label">📅 Duration</div>
+                <div class="value">12-16 Weeks</div>
+            </div>
+            <div class="info-item">
+                <div class="label">📚 Course Title</div>
+                <div class="value">Ethical Hacking &amp; Penetration Testing</div>
+            </div>
+            <div class="info-item">
+                <div class="label">📋 Prerequisites</div>
+                <div class="value" style="font-size:14px;">Networking · OS · Python/Bash</div>
+            </div>
+        </div>
+
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy_XtOYRLyhguWyRc6QFil_NWiRqI0ZzVXaSbeCJO44jtI1sDBWM1E6r8YqKnf82BNicZk_Ofo6praW0GxWEy-ZO8d156HQIKRhqupEUz5wh_bmxtX2_mDWOK-NSXofBURV1k3mHMNHKLnWib-3xmDumKyY6Y7IgBojECmIvt_gwn8alG809VV3hJAZ785/s320/image.png" alt="Ethical Hacking Book"/>
+                </a>
+                
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00ff88;">Complete Ethical Hacking Guide</strong></p>
+               
+                <a class="btn" href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">🛒 Buy Now on Amazon</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 1 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/introduction-to-ethical-hacking.html" target="_blank">Module 1: Introduction to Ethical Hacking</a></div>
+            <ul>
+                <li>Understanding Ethical Hacking vs. Malicious Hacking</li>
+                <li>Roles of an Ethical Hacker</li>
+                <li>Legal and Ethical Aspects (Laws, Certifications, Compliance)</li>
+                <li>Penetration Testing Methodologies (OSSTMM, PTES, NIST)</li>
+                <li>Setting Up a Hacking Lab (<a href="https://www.cybersume.xyz/2025/03/what-is-vmware-virtualbox.html" target="_blank">Virtual Machines</a>, <a href="https://www.cybersume.xyz/2025/03/kali-linux-complete-tutorial.html" target="_blank">Kali Linux</a>, Metasploit)</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 2 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/footprinting-reconnaissance.html" target="_blank">Module 2: Footprinting &amp; Reconnaissance</a></div>
+            <ul>
+                <li>Passive vs. Active Reconnaissance</li>
+                <li>Gathering Information Using: Google Dorking, WHOIS, DNS Lookup, Reverse IP Lookup</li>
+                <li>Social Engineering &amp; OSINT Tools (Maltego, theHarvester)</li>
+                <li>Network Scanning Techniques (Nmap, Masscan)</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 3 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/scanning-enumeration.html" target="_blank">Module 3: Scanning &amp; Enumeration</a></div>
+            <ul>
+                <li>Network Scanning Techniques (Ping Sweeps, Port Scanning)</li>
+                <li>Vulnerability Scanning (Nessus, OpenVAS)</li>
+                <li>Enumeration (NetBIOS, SNMP, LDAP, SMB)</li>
+                <li>Banner Grabbing &amp; Service Fingerprinting</li>
+                <li><a href="https://www.cybersume.xyz/2026/06/dirb-web-content-scanner-tool.html" target="_blank">Dirb — Web Content Scanner Tool</a></li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 4 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/system-hacking-exploitation.html" target="_blank">Module 4: System Hacking &amp; Exploitation</a></div>
+            <ul>
+                <li>Password Cracking (John the Ripper, Hashcat, Hydra)</li>
+                <li>Privilege Escalation (Windows &amp; Linux)</li>
+                <li>Exploiting Vulnerabilities (Metasploit Framework)</li>
+                <li>Maintaining Access (Backdoors, Rootkits, Trojans)</li>
+                <li>Covering Tracks (Log Tampering, File Deletion)</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 5 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/malware-threats-analysis.html" target="_blank">Module 5: Malware Threats &amp; Analysis</a></div>
+            <ul>
+                <li>Types of Malware (Viruses, Worms, Trojans, Ransomware)</li>
+                <li>Analyzing Malware (Static &amp; Dynamic Analysis)</li>
+                <li>Reverse Engineering Basics (Ghidra, IDA Pro)</li>
+                <li>Antivirus Evasion Techniques</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 6 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/sniffing-session-hijacking.html" target="_blank">Module 6: Sniffing &amp; Session Hijacking</a></div>
+            <ul>
+                <li>Packet Sniffing (Wireshark, Tcpdump)</li>
+                <li>MITM Attacks (ARP Spoofing, DNS Spoofing)</li>
+                <li>Session Hijacking (Cookie Stealing, TCP Hijacking)</li>
+                <li>SSL Stripping &amp; HSTS Bypass</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 7 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/web-application-hacking.html" target="_blank">Module 7: Web Application Hacking</a></div>
+            <ul>
+                <li><strong>OWASP Top 10 Vulnerabilities</strong>
+                    <ul>
+                        <li>SQL Injection (SQLi)</li>
+                        <li>Cross-Site Scripting (XSS)</li>
+                        <li>Cross-Site Request Forgery (CSRF)</li>
+                        <li>Broken Authentication</li>
+                        <li>Security Misconfigurations</li>
+                    </ul>
+                </li>
+                <li>Web App Testing Tools (Burp Suite, OWASP ZAP)</li>
+                <li>API Security Testing</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 8 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/wireless-network-hacking.html" target="_blank">Module 8: Wireless Network Hacking</a></div>
+            <ul>
+                <li>Wi-Fi Encryption (WEP, WPA, WPA2, WPA3)</li>
+                <li>Cracking Wi-Fi Passwords (Aircrack-ng, Wifite)</li>
+                <li>Rogue Access Points &amp; Evil Twin Attacks</li>
+                <li>Bluetooth Hacking (BlueBorne, BLE Exploits)</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 9 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/social-engineering-phishing.html" target="_blank">Module 9: Social Engineering &amp; Phishing</a></div>
+            <ul>
+                <li>Psychological Manipulation Techniques</li>
+                <li>Phishing Attacks (Email, SMS, Voice Phishing)</li>
+                <li>Creating Fake Login Pages (SEToolkit, GoPhish)</li>
+                <li>Defending Against Social Engineering</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 10 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/cloud-security-iot-hacking.html" target="_blank">Module 10: Cloud Security &amp; IoT Hacking</a></div>
+            <ul>
+                <li>Cloud Security Risks (AWS, Azure, GCP)</li>
+                <li>Container &amp; Kubernetes Security</li>
+                <li>IoT Device Exploitation (Firmware Analysis, Default Credentials)</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 11 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/post-exploitation-reporting.html" target="_blank">Module 11: Post-Exploitation &amp; Reporting</a></div>
+            <ul>
+                <li>Data Exfiltration Techniques</li>
+                <li>Pivoting &amp; Lateral Movement</li>
+                <li>Writing Professional Penetration Test Reports</li>
+                <li>Mitigation &amp; Remediation Strategies</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- MODULE 12 -->
+        <!-- ============================================================ -->
+        <div class="module-card">
+            <div class="module-title"><a href="https://www.cybersume.xyz/2025/03/capture-flag-ctf-hands-on-labs.html" target="_blank">Module 12: Capture The Flag (CTF) &amp; Hands-On Labs</a></div>
+            <ul>
+                <li>Practical Challenges (Vulnhub, Hack The Box, TryHackMe)</li>
+                <li>Real-World Scenario Simulations</li>
+                <li>Final Project: Full-Scope Penetration Test</li>
+            </ul>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- PROGRAMMING LANGUAGES -->
+        <!-- ============================================================ -->
+        <h3 style="text-align:center;font-size:22px;color:#ffcc00;">
+            <a href="https://www.cybersume.xyz/2025/03/programming-languages.html" target="_blank" style="color:#ffcc00;">
+                *** You can check out Here for Ethical Hacking Programming Language ***
+            </a>
+        </h3>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- CERTIFICATION & CAREER -->
+        <!-- ============================================================ -->
+        <h2>Certification &amp; Career Guidance</h2>
+
+        <h4>Recommended Certifications</h4>
+        <ul>
+            <li><strong>CEH</strong> — Certified Ethical Hacker</li>
+            <li><strong>OSCP</strong> — Offensive Security Certified Professional</li>
+            <li><strong>eJPT</strong> — eLearnSecurity Junior Penetration Tester</li>
+            <li><strong>PNPT</strong> — Practical Network Penetration Tester</li>
+        </ul>
+
+        <h4>Career Paths</h4>
+        <ul>
+            <li><strong>Pen Tester</strong> — Find and exploit vulnerabilities</li>
+            <li><strong>Security Analyst</strong> — Monitor and defend systems</li>
+            <li><strong>Red Teamer</strong> — Simulate advanced attacks</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- ASSESSMENT & GRADING -->
+        <!-- ============================================================ -->
+        <h2>Assessment &amp; Grading</h2>
+
+        <div class="assessment-grid">
+            <div class="item">
+                <span class="label">📝 Weekly Labs &amp; Challenges</span>
+                <span class="percent">40%</span>
+            </div>
+            <div class="item">
+                <span class="label">📖 Mid-Term Exam (Theory + Practical)</span>
+                <span class="percent">20%</span>
+            </div>
+            <div class="item">
+                <span class="label">🏁 Final CTF Challenge</span>
+                <span class="percent">20%</span>
+            </div>
+            <div class="item">
+                <span class="label">📄 Report Writing &amp; Documentation</span>
+                <span class="percent">20%</span>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- RECOMMENDED TOOLS -->
+        <!-- ============================================================ -->
+        <h2>Recommended Tools</h2>
+
+        <div class="tools-tags">
+            <span class="tag">🐧 Kali Linux</span>
+            <span class="tag">💥 Metasploit</span>
+            <span class="tag">🌐 Burp Suite</span>
+            <span class="tag">🔍 Nmap</span>
+            <span class="tag">📡 Wireshark</span>
+            <span class="tag">🔑 John the Ripper</span>
+            <span class="tag">⚡ Hashcat</span>
+            <span class="tag">📶 Aircrack-ng</span>
+            <span class="tag">🔧 Ghidra</span>
+        </div>
+
+       
+
+        <!-- ============================================================ -->
+        <!-- SHARE SECTION -->
+        <!-- ============================================================ -->
+        <div class="share-section">
+            <p>📤 Share this Ethical Hacking Syllabus with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Ethical%20Hacking%20Syllabus%20-%20Complete%2012-Week%20Course%20Outline%20for%20Penetration%20Testing!%20%23EthicalHacking%20%23CyberSecurity%20%23Syllabus','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align:center;padding-top:20px;color:#6a7290;font-size:14px;">
+            <p>This syllabus provides a structured approach to learning ethical hacking, balancing theory with hands-on practice.</p>
+            <p style="color:#ffcc00;font-weight:600;">Would you like any modifications based on specific certifications or focus areas?</p>
+        </div>
+
+    </div>
+
+</div>
